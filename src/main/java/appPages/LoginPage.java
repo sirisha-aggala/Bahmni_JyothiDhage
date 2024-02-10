@@ -36,7 +36,7 @@ public class LoginPage {
         driver.findElement(textPassword).sendKeys(password);
         driver.findElement(buttonLogin).click();
         Select select=new Select(driver.findElement(selectLocation));
-        select.selectByVisibleText("Bahmni Clinic");
+        select.selectByVisibleText("Registration Desk");
         driver.findElement(By.xpath("//button[text()='Submit Location']")).click();
         Thread.sleep(5000);
     }

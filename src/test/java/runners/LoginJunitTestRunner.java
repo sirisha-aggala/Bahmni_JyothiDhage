@@ -17,7 +17,7 @@ import org.junit.runner.RunWith;
 
                 "timeline:test-output-thread/"
 
-        },tags = "@RegistrationTest"
+        },tags = "@Admin"
 
 
 )
