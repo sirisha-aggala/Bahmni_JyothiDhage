@@ -34,10 +34,10 @@ public class LoginPage {
     public void loginToBahmniApp(String username, String password) throws InterruptedException {
         driver.findElement(textUsername).sendKeys(username);
         driver.findElement(textPassword).sendKeys(password);
-        driver.findElement(buttonLogin).click();
+        //driver.findElement(buttonLogin).click();
         Select select=new Select(driver.findElement(selectLocation));
         select.selectByVisibleText("Bahmni Clinic");
-        driver.findElement(By.xpath("//button[text()='Submit Location']")).click();
+        driver.findElement(buttonLogin).click();
         Thread.sleep(5000);
     }
 

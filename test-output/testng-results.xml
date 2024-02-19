@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-02-06T20:09:09 GMT" name="Default suite" finished-at="2024-02-06T20:09:44 GMT" duration-ms="34664">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.LoginTestNGTestRunner@4a83a74a]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2024-02-06T20:09:09 GMT" name="Default test" finished-at="2024-02-06T20:09:44 GMT" duration-ms="34664">
+      <class name="runners.LoginTestNGTestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.LoginTestNGTestRunner@4a83a74a]" started-at="2024-02-06T20:09:09 GMT" name="setUpClass" finished-at="2024-02-06T20:09:10 GMT" duration-ms="668" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4fbe486c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.LoginTestNGTestRunner@4a83a74a]" started-at="2024-02-06T20:09:10 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-06T20:09:37 GMT" duration-ms="27574" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate the patient registration with valid data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[To validate the patient registration]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.LoginTestNGTestRunner@4a83a74a]" started-at="2024-02-06T20:09:37 GMT" name="tearDownClass" finished-at="2024-02-06T20:09:44 GMT" duration-ms="6388" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runners.LoginTestNGTestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
