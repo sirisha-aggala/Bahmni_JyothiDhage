@@ -25,20 +25,31 @@ public class LoginPage {
 
     private By textUsername=By.id("username");
     private By textPassword=By.id("password");
+
     private By selectLocation=By.id("location");
-    private By buttonLogin=By.xpath("//button[@type='submit' and text()='Login']");
+    private By buttonLogin=By.xpath("(//button[@class='confirm'])[1]");
 
 
 
 
-    public void loginToBahmniApp(String username, String password) throws InterruptedException {
+   /* public void loginToBahmniApp(String username, String password) throws InterruptedException {
         driver.findElement(textUsername).sendKeys(username);
         driver.findElement(textPassword).sendKeys(password);
         //driver.findElement(buttonLogin).click();
         Select select=new Select(driver.findElement(selectLocation));
         select.selectByVisibleText("Bahmni Clinic");
         driver.findElement(buttonLogin).click();
-        Thread.sleep(5000);
+        Thread.sleep(5000); */
+
+
+        public void loginToBahmniApp(String username, String password) throws InterruptedException {
+            driver.findElement(textUsername).sendKeys(username);
+            driver.findElement(textPassword).sendKeys(password);
+            driver.findElement(buttonLogin).click();
+            Select select=new Select(driver.findElement(selectLocation));
+            select.selectByVisibleText("Registration Desk");
+            driver.findElement(By.xpath("//button[text()='Submit Location']")).click();
+            Thread.sleep(5000);
     }
 
 

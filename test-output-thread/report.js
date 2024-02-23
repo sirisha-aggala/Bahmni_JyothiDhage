@@ -1,4 +1,4 @@
 $(document).ready(function() {
-CucumberHTML.timelineItems.pushArray([{"id":"b0b1ecbe-0212-4a88-a4ce-7b433a6d107b","feature":"To validate the patient registration","scenario":"To validate the patient registration with valid data","start":1708084206981,"group":1,"content":"","tags":"@registrationtest,","end":1708084235353,"className":"passed"}]);
+CucumberHTML.timelineItems.pushArray([{"id":"5215d6de-f583-43e9-8f46-56be28b93ab2","feature":"To validate Clinical feature","scenario":"User should be able to order test from Order","start":1708703520489,"group":1,"content":"","tags":"@clinicaltest2,","end":1708703578163,"className":"passed"}]);
 CucumberHTML.timelineGroups.pushArray([{"id":1,"content":"Thread[main,5,main]"}]);
 });
