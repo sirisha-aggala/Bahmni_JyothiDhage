@@ -36,7 +36,7 @@ public class LoginPage {
         driver.findElement(textPassword).sendKeys(password);
         driver.findElement(buttonLogin).click();
         Select select=new Select(driver.findElement(selectLocation));
-        select.selectByVisibleText("Registration Desk");
+        select.selectByVisibleText("General Ward");
         driver.findElement(By.xpath("//button[text()='Submit Location']")).click();
         Thread.sleep(5000);
     }
