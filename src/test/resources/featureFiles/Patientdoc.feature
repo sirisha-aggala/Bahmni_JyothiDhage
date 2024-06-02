@@ -7,6 +7,8 @@ Background:
   Scenario: User should be able to upload document under the Patient Documents module
   Given verified user clicks on the Patient Documents button
   When   select the patient from the dashboard
-  Then  select the division,date,
+  Then  click on visit
+  Then click on visittype
+  Then click date
   Then user uploads the documents by clicking on save button
 
