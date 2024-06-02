@@ -6,10 +6,7 @@ Background:
 @Patientdoc
   Scenario: User should be able to upload document under the Patient Documents module
   Given verified user clicks on the Patient Documents button
-  When   select the patient
-  Then  select visit
-  Then select typedropdown
-  Then visitdate
-  Then visit enddate
-  Then user uploads the documents by clicking on scan button
+  When   select the patient from the dashboard
+  Then  select the division,date,
+  Then user uploads the documents by clicking on save button
 
