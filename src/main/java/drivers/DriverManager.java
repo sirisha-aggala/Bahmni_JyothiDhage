@@ -17,16 +17,6 @@ import java.sql.Driver;
 import java.util.HashMap;
 
 public class DriverManager {
-
-// first removed setter method
-//  made the getDriver method as synchronized
-    // lastly we made the init browser return type from void to WebDriver
-
-
-
-    // These changes done from chandrika feature branch
-    // one more chamnge from Chandrika's branch
-
 public static ThreadLocal<WebDriver>   container=new ThreadLocal<WebDriver>();
 
 
