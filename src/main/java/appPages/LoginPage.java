@@ -23,7 +23,7 @@ public class LoginPage {
 
 
 
-    private By textUsername=By.id("username");
+    private By textUserName=By.id("username");
     private By textPassword=By.id("password");
     private By selectLocation=By.id("location");
     private By buttonLogin=By.xpath("//button[@type='submit' and text()='Login']");
@@ -32,7 +32,7 @@ public class LoginPage {
 
 
     public void loginToBahmniApp(String username, String password) throws InterruptedException {
-        driver.findElement(textUsername).sendKeys(username);
+        driver.findElement(textUserName).sendKeys(username);
         driver.findElement(textPassword).sendKeys(password);
         driver.findElement(buttonLogin).click();
         Select select=new Select(driver.findElement(selectLocation));
