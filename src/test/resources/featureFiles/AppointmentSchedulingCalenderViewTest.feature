@@ -7,8 +7,8 @@ Feature: Appointment Scheduling- Calendar View
 @AptTest01
  Scenario: Display appointments for the current week in Calendar view
     Given on the Home page the user clicks on the Appointment Scheduling button
-    And user navigates to the "<Manage Appointments>" page
-    When the user clicks on "<Appointments List>"
+    And user navigates to the Manage Appointments page
+    When the user clicks on Appointments List
     And user clicks on the week button
     Then the calendar should display the appointments for the current week
 
