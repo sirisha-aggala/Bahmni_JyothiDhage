@@ -1,32 +1,27 @@
 package appPages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 
 public class ManageAppointmentsPage extends BaseAction {
     public WebDriver driver;
-    // WebElement declarations using @FindBy annotation
-    @FindBy(id = "bahmni.appointment.scheduling")
-    private WebElement appointmentSchedulingButton;
-    @FindBy(xpath = "//a[@href='#/home/manage']")
-    private WebElement homeManageTextDisplay;
-    @FindBy(xpath = "//a[contains(text(), 'Appointments List')]")
-    private WebElement appointmentsListButton;
-    @FindBy(xpath = "//a[contains(text(), 'Calendar')]")
-    private WebElement calendarButton;
-    @FindBy(xpath = "//button[@ng-click='$parent.toggleWeekView()'][normalize-space()='Week']")
-    private WebElement weekButton;
-    @FindBy(xpath = "//label[@for='weeklyDate']")
-    private WebElement weeklyDate;
+
 
     public ManageAppointmentsPage(WebDriver driver) {
-        this.driver = driver;
-        PageFactory.initElements(driver, this); // Initialize PageFactory elements
-    }
 
-    // Methods to interact with the elements
+        this.driver = driver;
+    }
+    // to store the locators
+    // top perform the actions on the locators
+
+    private By appointmentSchedulingButton = By.id("bahmni.appointment.scheduling");
+    private By homeManageTextDisplay = By.xpath("//a[@href='#/home/manage']");
+    private By appointmentsListButton = By.xpath("//a[contains(text(), 'Appointments List')]");
+    private By calendarButton = By.xpath("//a[contains(text(), 'Calendar')]");
+    private By weekbutton = By.xpath("//button[@ng-click='$parent.toggleWeekView()'][normalize-space()='Week']");
+
+    private By weeklyDate = By.xpath("//label[@for='weeklyDate']");
+
     public void assertHomePageElements() {
         verifyIsElementDisplayed(appointmentSchedulingButton);
     }
@@ -35,24 +30,22 @@ public class ManageAppointmentsPage extends BaseAction {
         clickElementUsingJs(appointmentSchedulingButton);
     }
 
-    public void verifyHomeManagePageElements() {
-        verifyIsElementDisplayed(homeManageTextDisplay);
+    public void verifyHomeManagePageElements(){
+    verifyIsElementDisplayed(homeManageTextDisplay);
     }
-
-    public void clickOnAppointmentsListButton() {
+    public void clickOnAppointmentsListButton(){
         verifyIsElementDisplayed(appointmentsListButton);
         clickElementUsingJs(appointmentsListButton);
     }
-
-    public void clickOnWeekButton() {
-        clickElementUsingJs(weekButton); // Use clickElementUsingJs for better reliability
+    public void clickOnWeekButton(){
+        clickElement(weekbutton);
     }
-
-    public void assertCalendarView() {
+    public void assertCalendarView(){
         verifyIsElementDisplayed(calendarButton);
     }
 
-    public void verifyCurrentWeeklyDate() {
+    public void verifyCurrentWeeklyDate(){
         waitUntilElementIsDisplayed(weeklyDate);
     }
+
 }
