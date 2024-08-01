@@ -6,6 +6,6 @@ Background:
   Then user should be able to login to the app
 
   @Reg
-  Scenario: Verify registration module is present on the bhamni app
+  Scenario: Verify registration module is present on the bahmni app
     When user click on registration button
-    Then user can see the regstartion page
+    Then user can see the registration page
