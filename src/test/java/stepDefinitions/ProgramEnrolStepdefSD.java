@@ -39,12 +39,14 @@ public class ProgramEnrolStepdefSD {
         obj.AddProgram();
     }
     @Then("enrolled program should be visible as an Active Program on the patient dashboard")
-    public void enrolledProgramShouldBeVisibleAsAnActiveProgramOnThePatientDashboard() {
-     Assert.assertFalse(obj.VerifyError());
+    public void enrolledProgramShouldBeVisibleAsAnActiveProgramOnThePatientDashboard() throws InterruptedException {
+        Assert.assertTrue(obj.VerifyPatientActiveProgram());
+        Thread.sleep(2000);
     }
     @Then("error message should display on the dashboard")
-    public void errorMessageShouldDisplayOnTheDashboard() {
+    public void errorMessageShouldDisplayOnTheDashboard() throws InterruptedException {
      Assert.assertTrue(obj.VerifyError());
+     Thread.sleep(2000);
     }
  @And("delete patient from the program")
  public void deletePatientFromTheProgram() throws InterruptedException {
@@ -54,6 +56,7 @@ public class ProgramEnrolStepdefSD {
  }
 
  @Then("patient should be successfully deleted from the program")
- public void patientShouldBeSuccessfullyDeletedFromTheProgram() {
- }
+ public void patientShouldBeSuccessfullyDeletedFromTheProgram() throws InterruptedException {
+ Assert.assertFalse(obj.VerifyPatientActiveProgram());
+    }
 }

@@ -36,7 +36,6 @@ private WebElement verifyPatientActiveProgram;
 @FindBy(xpath = "//div[@class='msg']")
 private WebElement errorMessage;
 @FindBy(css="input#delete_btn")
-//@FindBy(xpath = "//input[@id='delete_btn']")
 private WebElement deleteButton;
 @FindBy(css="textarea[placeholder='Reason to delete the program']")
 private WebElement deleteReason;
@@ -44,48 +43,41 @@ private WebElement deleteReason;
 private WebElement deleteButton2;
 @FindBy(xpath = "//button[@id='delete']")
 private WebElement deleteButton3;
-    public void NavigateToProgramPage() throws InterruptedException {
+    public void NavigateToProgramPage() {
     programs.click();
-    Thread.sleep(2000);
     allPatients.click();
-    Thread.sleep(2000);
     }
     public boolean VerifyProgramPage(){
         return allPatients.isDisplayed();
     }
     public void NavigateToPatientPage() throws InterruptedException {
         searchPatient.sendKeys("john");
-        Thread.sleep(2000);
         searchbutton.click();
-        Thread.sleep(2000);
     }
     public boolean VerifyPatientPage(){
         return newProgramEnrollment.isDisplayed();
     }
     public void AddProgram() throws InterruptedException {
-        Thread.sleep(2000);
         newProgramEnrollment.click();
-        Thread.sleep(2000);
         new Select(driver.findElement(By.xpath("//select[@ng-model='programSelected']"))).selectByVisibleText("TB Program");
-        Thread.sleep(5000);
         idNumber.sendKeys("200001");
-        Thread.sleep(2000);
         enroll.click();
         Thread.sleep(2000);
             }
-    public boolean VerifyError(){
+    public boolean VerifyPatientActiveProgram(){
+        return verifyPatientActiveProgram.isDisplayed();
+    }
+    public boolean VerifyError() throws InterruptedException {
         return errorMessage.isDisplayed();
     }
     public void DeletePatient() throws InterruptedException {
-        Thread.sleep(2000);
         deleteButton.click();
-        Thread.sleep(2000);
         deleteReason.sendKeys("Testing");
-        Thread.sleep(2000);
         deleteButton2.click();
-        Thread.sleep(2000);
         deleteButton3.click();
-        Thread.sleep(2000);
+    }
+    public boolean VerifyDelete() throws InterruptedException {
+        return deleteButton.isDisplayed();
     }
 }
 
