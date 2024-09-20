@@ -13,7 +13,7 @@ import org.testng.Assert;
 public class RegisStepDefs_Sukanya {
 
     LoginPage obj1 = new LoginPage(DriverManager.getDriver());
-    RegisPage_Sukanya regObj = new RegisPage_Sukanya(DriverManager.getDriver());
+    RegisPageSukanya regObj = new RegisPageSukanya(DriverManager.getDriver());
     @Given("Login and select Location")
     public void loginAndSelectLocation() throws InterruptedException {
         DriverManager.getDriver().get("https://docker.standard.mybahmni.in/bahmni/home/index.html#/login");
