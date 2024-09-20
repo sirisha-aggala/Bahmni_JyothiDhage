@@ -8,11 +8,11 @@ import org.openqa.selenium.support.ui.Select;
 
 import java.time.Duration;
 
-public class RegisPage_Sukanya {
+public class RegisPageSukanya {
 
         public WebDriver driver;
 
-        public RegisPage_Sukanya(WebDriver driver) {
+        public RegisPageSukanya(WebDriver driver) {
             this.driver = driver;
             PageFactory.initElements(driver, this);
             driver.manage().timeouts().implicitlyWait(Duration.ofMillis(5000));
