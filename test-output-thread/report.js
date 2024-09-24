@@ -1,4 +1,4 @@
 $(document).ready(function() {
-CucumberHTML.timelineItems.pushArray([{"id":"66cfa4f1-2118-4706-b586-4af619f32a51","feature":"To Verify Registration module","scenario":"To validate Registration of new patient with  valid inputs","start":1726904831462,"group":1,"content":"","tags":"@deeksha,","end":1726904862867,"className":"passed"}]);
+CucumberHTML.timelineItems.pushArray([{"id":"34c391c3-e90c-4369-9da4-92d6e9cece65","feature":"To verify Operation Theatre module","scenario":"To validate user can add new surgical block","start":1727202379855,"group":1,"content":"","tags":"@deeksha_otm,","end":1727202415195,"className":"passed"}]);
 CucumberHTML.timelineGroups.pushArray([{"id":1,"content":"Thread[main,5,main]"}]);
 });

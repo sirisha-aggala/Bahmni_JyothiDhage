@@ -2,6 +2,7 @@ package stepDefinitions;
 
 import appPages.OTDeeksha_POM;
 import drivers.DriverManager;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 
 public class OT_Deeksha {
@@ -27,4 +28,7 @@ public class OT_Deeksha {
     }
 
 
+    @And("click on save button")
+    public void clickOnSaveButton() {
+    }
 }

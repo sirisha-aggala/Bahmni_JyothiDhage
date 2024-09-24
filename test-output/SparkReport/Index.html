@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Bahmni Execution Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Sep 21, 2024 08:47:11 am</span></a>
+<a href="#"><span class="badge badge-primary">Sep 24, 2024 07:26:19 pm</span></a>
 </li>
 </ul>
 </div>
@@ -66,13 +66,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Sep 21, 2024 08:47:11 am</h3>
+<h3>Sep 24, 2024 07:26:19 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Sep 21, 2024 08:47:42 am</h3>
+<h3>Sep 24, 2024 07:26:55 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -143,7 +143,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>7</b> steps passed</small></div>
+<div><small data-tooltip='100%'><b>8</b> steps passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> steps failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -162,7 +162,7 @@
 </div></div>
 <script>
 var timeline = {
-"To Verify Registration module":31.38
+"To verify Operation Theatre module":35.318
 };
 </script>
 <div class="row">
@@ -172,7 +172,7 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@Deeksha</td>
+<td>@Deeksha_OTM</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -221,7 +221,7 @@ warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 7,
+passGrandChild: 8,
 failGrandChild: 0,
 warningGrandChild: 0,
 skipGrandChild: 0,
@@ -246,7 +246,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@Deeksha</a>
+<a class="dropdown-item" href="#">@Deeksha_OTM</a>
 </ul>
 </li>
 </ul>
@@ -257,9 +257,9 @@ eventsCount: 5,
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">To Verify Registration module</p>
+            <p class="name">To verify Operation Theatre module</p>
             <p class="text-sm">
-              <span>8:47:11 am</span> / <span>00:00:31:380</span>
+              <span>7:26:19 pm</span> / <span>00:00:35:318</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -267,10 +267,10 @@ eventsCount: 5,
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">To Verify Registration module</h5>
-<span class='badge badge-success'>09.21.2024 8:47:11 am</span>
-<span class='badge badge-danger'>09.21.2024 8:47:42 am</span>
-<span class='badge badge-default'>00:00:31:380</span>
+<h5 class="test-status text-pass">To verify Operation Theatre module</h5>
+<span class='badge badge-success'>09.24.2024 7:26:19 pm</span>
+<span class='badge badge-danger'>09.24.2024 7:26:55 pm</span>
+<span class='badge badge-default'>00:00:35:318</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -282,54 +282,52 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>To validate Registration of new patient with  valid inputs</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>To validate user can add new surgical block</div>
       </div>
     </div>
-        <div class="scenario_outline collapse">
-            <div class="card-body l1">
-              <div class="card-header">
-                <div class="card-title outline-child">
-                  <div class="node" id="3"><span class="badge log pass-bg mr-2">Pass</span>To validate Registration of new patient with  valid inputs</div>
-                </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDefinition.user_launches_the_application()">
+                <span>Given user launches the application</span>
+      <div>
+      </div>
               </div>
-              <div class="card-body mt-3 collapse">
-                  <div class="step pass-bg">
-                    <span>Given user launches the application</span>
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDefinition.user_enters_the_login_credentials_and_click_on_login_button()">
+                <span>And user enters the login credentials and click on login button</span>
       <div>
       </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And user enters the login credentials and click on login button</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then user should be able to login to the app</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then Clicks on the Registration tab</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then Clicks on create new button</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then User enters "Kamal" and "Jeet" and "Male" and "35"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then clicks on startOPD button</span>
-      <div>
-      </div>
-                  </div>
               </div>
-            </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDefinition.user_should_be_able_to_login_to_the_app()">
+                <span>Then user should be able to login to the app</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.OT_Deeksha.user_click_on_operation_theatre_button_on_homepage()">
+                <span>And user click on Operation Theatre button on homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.OT_Deeksha.click_on_ot_scheduling()">
+                <span>And click on OT Scheduling</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.OT_Deeksha.click_on_the_button_new_surgical_block()">
+                <span>And click on the button New Surgical Block</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.OT_Deeksha.user_is_able_to_enter_surgeon_details()">
+                <span>And User is able to enter Surgeon details</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.OT_Deeksha.clickOnSaveButton()">
+                <span>And click on save button</span>
+      <div>
+      </div>
+              </div>
+          </div>
         </div>
   </div>
 </div>
@@ -357,12 +355,12 @@ eventsCount: 5,
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@Deeksha</p>
+<p class="name">@Deeksha_OTM</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@Deeksha</h4>
+<h4>@Deeksha_OTM</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -376,11 +374,11 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>08:47:11 am</td>
+<td>19:26:19 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='3'>To validate Registration of new patient with valid inputs</a>
+<a href="#" class="linked" test-id='1' id='2'>To validate user can add new surgical block</a>
 <div class="">
-<span class="badge badge-default">To Verify Registration module.To validate Registration of new patient with valid inputs</span>
+<span class="badge badge-default">To verify Operation Theatre module.To validate user can add new surgical block</span>
 </div>
 </td>
 </tr>

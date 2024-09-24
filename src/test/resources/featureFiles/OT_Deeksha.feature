@@ -9,3 +9,4 @@ Feature: To verify Operation Theatre module
     And click on OT Scheduling
     And click on the button New Surgical Block
     And User is able to enter Surgeon details
+    And click on save button

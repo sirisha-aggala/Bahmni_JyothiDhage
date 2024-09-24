@@ -7,7 +7,7 @@ import org.testng.annotations.DataProvider;
 
 @CucumberOptions(
 
-        features = {"src/test/resources/featureFiles/DeekshaRegistration.feature"},
+        features = {"src/test/resources/featureFiles"},
         glue = {"stepDefinitions","CommonActions"},
         plugin = {"pretty",
 
@@ -15,7 +15,7 @@ import org.testng.annotations.DataProvider;
 
                 "timeline:test-output-thread/"
 
-        }, tags="@Deeksha"
+        }, tags="@Deeksha_OTM"
 
 
 )
