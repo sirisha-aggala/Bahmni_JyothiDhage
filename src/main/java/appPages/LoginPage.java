@@ -40,6 +40,16 @@ public class LoginPage extends BaseAction {
         driver.findElement(By.xpath("//button[text()='Submit Location']")).click();
         Thread.sleep(5000);
     }
+    public void loginToBahmniApp(String username, String password,String Location) throws InterruptedException {
+        driver.findElement(textUserName).sendKeys(username);
+        driver.findElement(textPassword).sendKeys(password);
+        selectDropDownValue(driver.findElement(selectLocation),Location);
+        //  Select select=new Select(driver.findElement(selectLocation));
+        // select.selectByVisibleText("OPD-1");
+        driver.findElement(buttonLogin).click();
+        Thread.sleep(5000);
+    }
+
 
 
 

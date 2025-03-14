@@ -2,22 +2,8 @@ package stepDefinitions;
 
 import appPages.*;
 import drivers.DriverManager;
-import utils.ConfigReader;
-import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.*;
-import org.bouncycastle.oer.Switch;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.Assert;
-
-import java.sql.SQLOutput;
-import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 //import java.time.Duration;
 
@@ -39,7 +25,7 @@ public class InpatientMgmt
     @When("user enters valid credentials and logs on successfully onto home page")
     public void userEntersValidCredentialsAndLogsOnSuccessfullyOntoHomePage() throws InterruptedException
     {
-        //loginpage.loginToBahmniApp("superman","Admin123","OPD-1");
+        loginpage.loginToBahmniApp("superman","Admin123","OPD-1");
         System.out.println("Successfully logged on");
         inPatientPage.checkIfHomePage();
 
